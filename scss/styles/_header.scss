@@ -1,0 +1,33 @@
+
+ .headerdiv{
+     max-width: 1263px;
+     width: 100%;
+     @media(max-width:1300px){
+         width:80%;
+     }
+     display: flex;
+     justify-content: space-between;
+     margin: 10px auto;
+     .navdiv{
+         width: 555px;
+         display: flex;
+         @media(max-width:900px){
+            display: none;
+        }
+         /*space-between არ იმუშავა*/
+         align-items: center;
+         .fa-bars{
+            display: none;
+            @media(max-width:900px){
+                display: inline-block;
+            }
+         }
+         li{
+             display: inline-flex;
+             color: #636060;
+             font-size: 17px;
+             font-weight: 400;
+             margin-right: 30px;
+         }
+    }
+}

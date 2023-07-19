@@ -1,0 +1,261 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.headerdiv {
+  max-width: 1263px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px auto;
+}
+@media (max-width: 1300px) {
+  .headerdiv {
+    width: 80%;
+  }
+}
+.headerdiv .navdiv {
+  width: 555px;
+  display: flex;
+  /*space-between არ იმუშავა*/
+  align-items: center;
+}
+@media (max-width: 900px) {
+  .headerdiv .navdiv {
+    display: none;
+  }
+}
+.headerdiv .navdiv .fa-bars {
+  display: none;
+}
+@media (max-width: 900px) {
+  .headerdiv .navdiv .fa-bars {
+    display: inline-block;
+  }
+}
+.headerdiv .navdiv li {
+  display: inline-flex;
+  color: #636060;
+  font-size: 17px;
+  font-weight: 400;
+  margin-right: 30px;
+}
+
+.sec-1 img {
+  display: flex;
+  position: absolute;
+  width: 100%;
+}
+@media (max-width: 480px) {
+  .sec-1 img {
+    height: 250px;
+  }
+}
+.sec-1 .textdiv {
+  position: relative;
+  max-width: 650px;
+  width: 100%;
+  margin: auto;
+  padding-top: 238px;
+}
+@media (max-width: 1200px) {
+  .sec-1 .textdiv {
+    padding-top: 150px;
+  }
+}
+@media (max-width: 900px) {
+  .sec-1 .textdiv {
+    padding-top: 100px;
+  }
+}
+.sec-1 .textdiv h1 {
+  font-size: 79px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 30px;
+}
+@media (max-width: 750px) {
+  .sec-1 .textdiv h1 {
+    font-size: 55px;
+    margin-left: 120px;
+  }
+}
+@media (max-width: 570px) {
+  .sec-1 .textdiv h1 {
+    font-size: 40px;
+    margin-left: 90px;
+    margin-top: 0px;
+  }
+}
+.sec-1 .textdiv h2 {
+  font-size: 19px;
+  font-weight: 400;
+  color: white;
+  margin-left: 90px;
+}
+@media (max-width: 750px) {
+  .sec-1 .textdiv h2 {
+    font-size: 10px;
+    margin-left: 220px;
+  }
+}
+@media (max-width: 750px) {
+  .sec-1 .textdiv h2 {
+    margin-left: 140px;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 370px) {
+  .sec-1 .textdiv h2 {
+    margin-left: 70px;
+  }
+}
+
+.sec-2 {
+  margin-top: 400px;
+  margin-left: 60px;
+}
+@media (max-width: 1550px) {
+  .sec-2 {
+    margin-top: 350px;
+  }
+}
+@media (max-width: 1450px) {
+  .sec-2 {
+    margin-top: 300px;
+  }
+}
+@media (max-width: 1300px) {
+  .sec-2 {
+    margin-top: 250px;
+  }
+}
+@media (max-width: 1000px) {
+  .sec-2 {
+    margin-top: 150px;
+  }
+}
+@media (max-width: 850px) {
+  .sec-2 {
+    margin-top: 130px;
+  }
+}
+@media (max-width: 700px) {
+  .sec-2 {
+    margin-top: 100px;
+  }
+}
+@media (max-width: 400px) {
+  .sec-2 {
+    margin-left: 40px;
+  }
+}
+.sec-2 .infodiv {
+  display: inline-flex;
+  width: 235px;
+  height: 200px;
+  flex-direction: column;
+  justify-content: space-between;
+  vertical-align: top;
+  margin-right: 40px;
+}
+@media (max-width: 1440px) {
+  .sec-2 .infodiv {
+    margin-bottom: 50px;
+    align-items: center;
+  }
+}
+.sec-2 .infodiv h3 {
+  color: #636060;
+  font-size: 20px;
+  font-weight: 400;
+}
+.sec-2 .infodiv h4 {
+  color: #010101;
+  font-size: 28px;
+}
+.sec-2 .infodiv p {
+  color: #636060;
+  font-size: 20px;
+  font-weight: 400;
+}
+.sec-2 .divwrap {
+  display: inline-flex;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  width: 100%;
+  vertical-align: top;
+}
+.sec-2 .divwrap div {
+  width: 286px;
+  margin-right: 40px;
+  margin-bottom: 40px;
+}
+.sec-2 .divwrap div h5 {
+  margin-top: 20px;
+}
+.sec-2 .divwrap div p {
+  margin-top: 10px;
+  color: #636060;
+  font-size: 20px;
+  font-weight: 400;
+}/*# sourceMappingURL=global.css.map */
